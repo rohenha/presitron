@@ -1,6 +1,6 @@
 <?php
 	try{
-		$bdd = new PDO('mysql:host=localhost;dbname=presitron;charset=utf8', 'root', 'root');
+		$bdd = new PDO('mysql:host=localhost;dbname=presitron;charset=utf8', 'root', 'ft20q)qU');
 	}catch (Exception $e){
 			return json_encode(0);
 	}
