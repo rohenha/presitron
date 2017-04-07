@@ -1,0 +1,73 @@
+
+	{
+		"Fillon" : {
+			"Nom" : " François Fillon",
+			"Cheveux" : "content/Fillon/cheveux.png",
+			"Yeux" : "content/Fillon/yeux.png",
+			"Bouche" : "content/Fillon/bouche.png",
+			"Reformes" : {
+				"0" : "Réduire progressivement la part du nucléaire",
+				"1" : "Réduire les avantages fiscaux pour le diesel",
+				"2" : "Limiter les mandats dans le temps",
+				"3" : "Casier judiciaire vierge pour être ministre",
+				"4" : "Simple contravention pour usage et détention de cannabis",
+				"5" : 	"Abroger les 35 heures"
+			}
+		},
+		"Hamon" : {
+			"Nom" : " Benoit Hamon",
+			"Cheveux" : "content/Hamon/cheveux.png",
+			"Yeux" : "content/Hamon/yeux.png",
+			"Bouche" : "content/Hamon/bouche.png",
+			"Reformes" : {
+				"0" : "Impôt sur le revenu plus progressif et réduire la TVA sur les produits de première nécessité",
+				"1" : "Légaliser le cannabis",
+				"2" : "Droit à la PMA (procréation médicalement assistée)",
+				"3" : "Droit de mourir dans la dignité",
+				"4" : "Revenu universel, à terme de 750 euros mensuels",
+				"5" : 	"50% d'énergies renouvelables et sortie du diesel d'ici 2025"
+			}
+		},
+		"LePen" : {
+			"Nom" : " Marine Le Pen",
+			"Cheveux" : "content/LePen/cheveux.png",
+			"Yeux" : "content/LePen/yeux.png",
+			"Bouche" : "content/LePen/bouche.png",
+			"Reformes" : {
+				"0" : "Restreindre l'immigration familiale et limiter le droit du sol",
+				"1" : "Uniforme à l'école, scolarité obligatoire à 5 ans",
+				"2" : "Pas d'adoption plénière pour les couples homosexuels",
+				"3" : "Pas de PMA pour les femmes seules et couples de femmes",
+				"4" : "Après négociation, référendum sur l'appartenance à l'UE et sortie de l'euro",
+				"5" : 	"Référendum pour inscrire la \"priorité nationale\" dans la Constitution"
+			}
+		},
+		"Macron" : {
+			"Nom" : " Emmanuel Macron",
+			"Cheveux" : "content/Macron/cheveux.png",
+			"Yeux" : "content/Macron/yeux.png",
+			"Bouche" : "content/Macron/bouche.png",
+			"Reformes" : {
+				"0" : "Légaliser le cannabis",
+				"1" : "Visa humanitaire pour les réfugiés",
+				"2" : "Financer la protection sociale par l'impôt",
+				"3" : "Durée du travail : priorité aux accords d'entreprise",
+				"4" : "Augmenter de 50% la prime d'activité",
+				"5" : 	"Confier l'assurance-chômage à l'Etat"
+			}
+		},
+		"Melenchon" : {
+			"Nom" : " Jean Luc Mélenchon",
+			"Cheveux" : "content/Melenchon/cheveux.png",
+			"Yeux" : "content/Melenchon/yeux.png",
+			"Bouche" : "content/Melenchon/bouche.png",
+			"Reformes" : {
+				"0" : "Négocier avec l'UE ",
+				"1" : "Réduire le temps de travail",
+				"2" : "Smic à 1.326 euros net en 2017",
+				"3" : "Retraite à 60 ans",
+				"4" : "VIe République ",
+				"5" : 	"Sortir du nucléaire"
+			}
+		}
+	}

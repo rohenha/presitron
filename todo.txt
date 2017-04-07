@@ -1,0 +1,24 @@
+Todo
+
+
+
+Mercredi :
+
+
+Jeudi - Vendredi :
+-Animation Logos
+- Animations Intro
+- Animation scroll
+- Faire open project
+- Responsive desktop
+
+
+A Revoir:
+- Taille img valeurs
+
+Done :
+- Faire valeurs
+- Faire Open valeurs
+
+
+Revoir anim contact et fleches
