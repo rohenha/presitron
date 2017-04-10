@@ -189,11 +189,10 @@
 		$('#confirmChoice').on('click', function(event) {
 			event.preventDefault();
 			FB.ui({
-				  method: 'share_open_graph',
-				  action_type: 'og.likes',
-				  action_properties: JSON.stringify({
-					object:'https://presitron.keley-live.com',
-				  })
+				  method: 'share',
+				  redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
+				  mobile_iframe: true,
+				  href : "https://presitron.keley-live.com",
 				}, function(response){
 				  // Debug response (optional)
 				  console.log(response);
