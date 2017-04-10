@@ -17,12 +17,7 @@ window.fbAsyncInit = function() {
 	xfbml      : true,
 	version    : 'v2.8'
   });
-  FB.AppEvents.logPageView();
-  FB.getLoginStatus(function(response) {
-	  if (response.status === 'connected') {
-	    var accessToken = response.authResponse.accessToken;
-	  }
-	} );
+
   $('#confirmChoice').on('click', function(event) {
 	  event.preventDefault();
 	  /* make the API call */
