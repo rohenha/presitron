@@ -20,30 +20,30 @@ window.fbAsyncInit = function() {
   FB.AppEvents.logPageView();
   $('#confirmChoice').on('click', function(event) {
 	  event.preventDefault();
-	  FB.ui({
-		  app_id : "428061007540028",
-			method: 'share',
-			redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
-			mobile_iframe: true,
-			href : "https://apps.facebook.com/presitron/",
-		  }, function(response){
-			// Debug response (optional)
-			console.log(response);
-		  });
-  });
+	  FB.api(
+		"/id_from_create_call",
+		"POST",
+		{
+			"object": "{\"fb:app_id\":\"302184056577324\",\"og:type\":\"website\",\"og:url\":\"Indiquez votre propre URL de l\\u2019objet ici\",\"og:title\":\"Sample Website\",\"og:image\":\"https:\\\/\\\/s-static.ak.fbcdn.net\\\/images\\\/devsite\\\/attachment_blank.png\"}"
+		},
+		function (response) {
+		  if (response && !response.error) {
+			/* handle the result */
+			FB.ui({
+				app_id : "428061007540028",
+				  method: 'share',
+				  redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
+				  mobile_iframe: true,
+				  href : "https://apps.facebook.com/presitron/",
+				}, function(response){
+				  // Debug response (optional)
+				  console.log(response);
+				});
+		});
 
-  FB.api(
-	  "/id_from_create_call",
-	  "POST",
-	  {
-		  "object": "{\"fb:app_id\":\"302184056577324\",\"og:type\":\"website\",\"og:url\":\"Indiquez votre propre URL de l\\u2019objet ici\",\"og:title\":\"Sample Website\",\"og:image\":\"https:\\\/\\\/s-static.ak.fbcdn.net\\\/images\\\/devsite\\\/attachment_blank.png\"}"
-	  },
-	  function (response) {
-		if (response && !response.error) {
-		  /* handle the result */
+		  }
 		}
-	  }
-  );
+	  );
 };
 
 
@@ -58,7 +58,7 @@ window.fbAsyncInit = function() {
    fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 
- 
+
 $(function() {
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
