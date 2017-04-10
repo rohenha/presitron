@@ -6,11 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/master.min.css">
 	<title>Présitron</title>
-	<meta property="og:url"                content="http://presitron.keley-live.com" />
+	<meta property="og:url"                content="https://apps.facebook.com/presitron/" />
 	<meta property="og:type"               content="page" />
 	<meta property="og:title"              content="Je vote XXX pour ce programme" />
 	<meta property="og:description"        content="OTOTOTOTOTOTOTOTO" />
-	<meta property="og:image"              content="" />
+	<meta property="og:image"              content="content/combinaisons/Facebook/Fillon-Hamon-LePen.jpg" />
 </head>
 <body id="home">
 
@@ -189,10 +189,11 @@
 		$('#confirmChoice').on('click', function(event) {
 			event.preventDefault();
 			FB.ui({
+				app_id : "428061007540028",
 				  method: 'share',
 				  redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
 				  mobile_iframe: true,
-				  href : "https://presitron.keley-live.com",
+				  href : "https://apps.facebook.com/presitron/",
 				}, function(response){
 				  // Debug response (optional)
 				  console.log(response);
