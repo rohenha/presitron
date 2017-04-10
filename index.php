@@ -178,42 +178,6 @@
 
 
 	</div>
-	<script>
-
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '428061007540028',
-	      xfbml      : true,
-	      version    : 'v2.8'
-	    });
-	    FB.AppEvents.logPageView();
-		$('#confirmChoice').on('click', function(event) {
-			event.preventDefault();
-			FB.ui({
-				app_id : "428061007540028",
-				  method: 'share',
-				  redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
-				  mobile_iframe: true,
-				  href : "https://apps.facebook.com/presitron/",
-				}, function(response){
-				  // Debug response (optional)
-				  console.log(response);
-				});
-		});
-	  };
-
-
-
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-
-
-	</script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/textPlugin.js"></script>
