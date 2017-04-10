@@ -39,11 +39,11 @@ window.fbAsyncInit = function() {
 				  // Debug response (optional)
 				  console.log(response);
 				});
-		});
-
 		  }
 		}
 	  );
+
+	  		});
 };
 
 
