@@ -178,6 +178,7 @@
 
 	</div>
 	<script>
+
 	  window.fbAsyncInit = function() {
 	    FB.init({
 	      appId      : '428061007540028',
@@ -191,7 +192,7 @@
 				  method: 'share_open_graph',
 				  action_type: 'og.likes',
 				  action_properties: JSON.stringify({
-					object:'http://presitron.keley-live.com',
+					object:'https://presitron.keley-live.com',
 				  })
 				}, function(response){
 				  // Debug response (optional)

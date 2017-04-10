@@ -334,12 +334,12 @@ $(function() {
 			success:function(data){
 				console.log("success");
 				console.log(data);
-				// setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
+				setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
 			},
 			error:function(data){
 				console.log("error");
 				console.log(data);
-				// setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
+				setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
 			}
 		});
 	});
