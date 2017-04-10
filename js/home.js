@@ -18,21 +18,27 @@ window.fbAsyncInit = function() {
 	version    : 'v2.8'
   });
   FB.AppEvents.logPageView();
+  FB.getLoginStatus(function(response) {
+	  if (response.status === 'connected') {
+	    var accessToken = response.authResponse.accessToken;
+	  }
+	} );
   $('#confirmChoice').on('click', function(event) {
 	  event.preventDefault();
 	  /* make the API call */
-FB.api(
-    "/428061007540028",
-    "POST",
-    {
-        "object": "{\"fb:app_id\":\"428061007540028\",\"og:type\":\"website\",\"og:url\":\"https://apps.facebook.com/presitron/\",\"og:title\":\"Sample Website\",\"og:image\":\"https:\\\/\\\/s-static.ak.fbcdn.net\\\/images\\\/devsite\\\/attachment_blank.png\"}"
-    },
-    function (response) {
-      if (response && !response.error) {
-        /* handle the result */
-      }
-    }
-);
+		FB.api(
+		    "/428061007540028",
+		    "POST",
+		    {
+		        "object": "{\"fb:app_id\":\"428061007540028\",\"og:type\":\"website\",\"og:url\":\"https://apps.facebook.com/presitron/\",\"og:title\":\"Sample Website\",\"og:image\":\"https:\\\/\\\/s-static.ak.fbcdn.net\\\/images\\\/devsite\\\/attachment_blank.png\"}"
+		    },
+		    function (response) {
+				console.log(response);
+		      if (response && !response.error) {
+		        /* handle the result */
+		      }
+		    }
+		);
 	  FB.ui({
 		  app_id : "428061007540028",
 			method: 'share',
