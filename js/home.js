@@ -42,7 +42,7 @@ window.fbAsyncInit = function() {
 			href : "https://apps.facebook.com/presitron/",
 			name : "Je vote "+$('#presName p span').html()+" pour ce programme :",
 			description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+"<br/>- "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+"<br/>- "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
-			picture : "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+cheveux+"-"+yeux+"-"+bouche+".jpg",
+			picture : "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+userConfig.Cheveux+"-"+userConfig.Yeux+"-"+userConfig.Bouche+".jpg",
 		  }, function(response){
 			// Debug response (optional)
 		  });
