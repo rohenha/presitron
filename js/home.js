@@ -40,8 +40,8 @@ window.fbAsyncInit = function() {
 			redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
 			mobile_iframe: true,
 			href : "https://apps.facebook.com/presitron/",
-			name : "Je vote "+$('#presName p span').html()+" pour ce programme :",
-			description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+"<br/>- "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+"<br/>- "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
+			title : "Je vote "+$('#presName p span').html()+" pour ce programme :",
+			description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+", - "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+", - "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
 			picture : "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+userConfig.Cheveux+"-"+userConfig.Yeux+"-"+userConfig.Bouche+".jpg",
 		  }, function(response){
 			// Debug response (optional)
