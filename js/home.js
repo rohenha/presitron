@@ -22,7 +22,7 @@ window.fbAsyncInit = function() {
 	  event.preventDefault();
 	  /* make the API call */
 		FB.api(
-		    "/428061007540028",
+		    "428061007540028",
 		    "POST",
 		    {
 		        "object": "{\"fb:app_id\":\"428061007540028\",\"og:type\":\"website\",\"og:url\":\"https://apps.facebook.com/presitron/\",\"og:title\":\"Sample Website\",\"og:image\":\"https:\\\/\\\/s-static.ak.fbcdn.net\\\/images\\\/devsite\\\/attachment_blank.png\"}"
@@ -40,16 +40,15 @@ window.fbAsyncInit = function() {
 			redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
 			mobile_iframe: true,
 			href : "https://apps.facebook.com/presitron/",
+			name : "Je vote "+$('#presName p span').html()+" pour ce programme :",
+			description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+"<br/>- "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+"<br/>- "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
+			picture : "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+cheveux+"-"+yeux+"-"+bouche+".jpg",
 		  }, function(response){
 			// Debug response (optional)
 		  });
   });
 
 };
-
-
-
-
 
 (function(d, s, id){
    var js, fjs = d.getElementsByTagName(s)[0];
@@ -384,12 +383,12 @@ $(function() {
 			success:function(data){
 				console.log("success");
 				console.log(data);
-				// setTimeout(function(){ document.location.href="https://apps.facebook.com/presitron/leaderboard.php"; },5000);
+				setTimeout(function(){ document.location.href="https://apps.facebook.com/presitron/leaderboard.php"; },5000);
 			},
 			error:function(data){
 				console.log("error");
 				console.log(data);
-				// setTimeout(function(){ document.location.href="https://apps.facebook.com/presitron/leaderboard.php"; },5000);
+				setTimeout(function(){ document.location.href="https://apps.facebook.com/presitron/leaderboard.php"; },5000);
 			}
 		});
 	});
