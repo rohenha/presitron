@@ -580,7 +580,6 @@ header {
       margin: 30px 0  0 0; }
 
 #leaderboard {
-  overflow: hidden;
   width: 98%; }
   #leaderboard #colonne_gauche {
     width: 50%;
