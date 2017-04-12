@@ -69,7 +69,7 @@
 			<div class="cross"></div>
 			<img id="president" src="imgs/president.png" alt="Hollande">
 			<h3>Moi Président !</h3>
-			<p>Parce que la campagne est folle, parce que la campagne est illisible, parce qu'elle est pleine de suspense... Construisez-vous même votre candidat et prenez le contrôle des élections !</p>
+			<p>Parce que la campagne est folle, parce que la campagne est illisible, parce qu'elle est pleine de suspense... Construisez vous-même votre candidat et prenez le contrôle des élections !</p>
 			<img id="signature" src="imgs/signature.png" alt="Signature">
 		</div>
 	</div>
