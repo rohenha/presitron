@@ -1,17 +1,15 @@
 
 	{
 		"Fillon" : {
-			"Nom" : " François Fillon",
+			"Nom" : " FranÃ§ois Fillon",
 			"Cheveux" : "content/Fillon/cheveux.png",
 			"Yeux" : "content/Fillon/yeux.png",
 			"Bouche" : "content/Fillon/bouche.png",
 			"Reformes" : {
-				"0" : "Réduire progressivement la part du nucléaire",
-				"1" : "Réduire les avantages fiscaux pour le diesel",
-				"2" : "Limiter les mandats dans le temps",
-				"3" : "Casier judiciaire vierge pour être ministre",
-				"4" : "Simple contravention pour usage et détention de cannabis",
-				"5" : 	"Abroger les 35 heures"
+				"0" : "ExÃ©cution de 500 000 fonctionnaires par mois",
+				"1" : "Passage Ã  la semaine de 72 heures, Ã  la journÃ©e de 32 heures",
+				"2" : "Suppression de l'ISF, et de tout impÃ´t pour le 16Ã¨me arrondissement de Paris"
+
 			}
 		},
 		"Hamon" : {
@@ -20,12 +18,9 @@
 			"Yeux" : "content/Hamon/yeux.png",
 			"Bouche" : "content/Hamon/bouche.png",
 			"Reformes" : {
-				"0" : "Impôt sur le revenu plus progressif et réduire la TVA sur les produits de première nécessité",
-				"1" : "Légaliser le cannabis",
-				"2" : "Droit à la PMA (procréation médicalement assistée)",
-				"3" : "Droit de mourir dans la dignité",
-				"4" : "Revenu universel, à terme de 750 euros mensuels",
-				"5" : 	"50% d'énergies renouvelables et sortie du diesel d'ici 2025"
+				"0" : "LÃ©galiser le cannabis, le LSD, la cocaÃ¯ne",
+				"1" : "Revenu universel pour tous les animaux, domestiques et sauvages",
+				"2" : "Droit Ã  la PMA, GPA, RFID, PSG, UHD, NFC"
 			}
 		},
 		"LePen" : {
@@ -34,12 +29,9 @@
 			"Yeux" : "content/LePen/yeux.png",
 			"Bouche" : "content/LePen/bouche.png",
 			"Reformes" : {
-				"0" : "Restreindre l'immigration familiale et limiter le droit du sol",
-				"1" : "Uniforme à l'école, scolarité obligatoire à 5 ans",
-				"2" : "Pas d'adoption plénière pour les couples homosexuels",
-				"3" : "Pas de PMA pour les femmes seules et couples de femmes",
-				"4" : "Après négociation, référendum sur l'appartenance à l'UE et sortie de l'euro",
-				"5" : 	"Référendum pour inscrire la \"priorité nationale\" dans la Constitution"
+				"0" : "Sortir de l'Europe, de l'Eurasie, du systÃ¨me solaire",
+				"1" : "La prÃ©fÃ©rence nationale pour les vacances scolaires",
+				"2" : "Pas d'adoption, de titre de sÃ©jour et interdiction de lever les yeux pour les homosexuels"
 			}
 		},
 		"Macron" : {
@@ -48,26 +40,21 @@
 			"Yeux" : "content/Macron/yeux.png",
 			"Bouche" : "content/Macron/bouche.png",
 			"Reformes" : {
-				"0" : "Légaliser le cannabis",
-				"1" : "Visa humanitaire pour les réfugiés",
-				"2" : "Financer la protection sociale par l'impôt",
-				"3" : "Durée du travail : priorité aux accords d'entreprise",
-				"4" : "Augmenter de 50% la prime d'activité",
-				"5" : 	"Confier l'assurance-chômage à l'Etat"
+				"0" : "Remplacement des vols intÃ©rieurs par des bus macron",
+				"1" : "Laisser aux entreprises le choix de vie ou de mort sur leurs employÃ©s",
+				"2" : "Le ministÃ¨re des Finances est sous-traitÃ© Ã  la SociÃ©tÃ© GÃ©nÃ©rale"
 			}
 		},
 		"Melenchon" : {
-			"Nom" : " Jean Luc Mélenchon",
+			"Nom" : " Jean Luc MÃ©lenchon",
 			"Cheveux" : "content/Melenchon/cheveux.png",
 			"Yeux" : "content/Melenchon/yeux.png",
 			"Bouche" : "content/Melenchon/bouche.png",
 			"Reformes" : {
-				"0" : "Négocier avec l'UE ",
-				"1" : "Réduire le temps de travail",
-				"2" : "Smic à 1.326 euros net en 2017",
-				"3" : "Retraite à 60 ans",
-				"4" : "VIe République ",
-				"5" : 	"Sortir du nucléaire"
+				"0" : "Smic Ã  3 126 euros nets en 2017",
+				"1" : "La semaine de 4 heures",
+				"2" : "la retraite Ã  45 ans, 37 pour les fonctionnaires, 28 pour les syndiquÃ©s"
+
 			}
 		}
 	}

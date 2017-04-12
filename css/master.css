@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
             box-shadow: 0px 0px 0 rgba(41, 41, 41, 0.2); }
   .btn span {
     display: block;
-    color: #b0b0b0;
+    color: #EF9174;
     text-transform: none;
     font-size: 0.7em;
     font-weight: 400;
@@ -503,7 +503,7 @@ header {
             right: 5px; }
         #home .bloc_description ul li .reforme {
           color: #d2d2d2;
-          font-size: 0.8em;
+          font-size: 1em;
           font-weight: 400;
           width: -webkit-calc(100% - 40px);
           width: calc(100% - 40px); }
