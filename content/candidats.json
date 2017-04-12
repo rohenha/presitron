@@ -1,14 +1,14 @@
 
 	{
 		"Fillon" : {
-			"Nom" : " FranÃ§ois Fillon",
+			"Nom" : " François Fillon",
 			"Cheveux" : "content/Fillon/cheveux.png",
 			"Yeux" : "content/Fillon/yeux.png",
 			"Bouche" : "content/Fillon/bouche.png",
 			"Reformes" : {
-				"0" : "ExÃ©cution de 500 000 fonctionnaires par mois",
-				"1" : "Passage Ã  la semaine de 72 heures, Ã  la journÃ©e de 32 heures",
-				"2" : "Suppression de l'ISF, et de tout impÃ´t pour le 16Ã¨me arrondissement de Paris"
+				"0" : "Exécution de 500 000 fonctionnaires par mois",
+				"1" : "Passage à  la semaine de 72 heures, à la journée de 32 heures",
+				"2" : "Suppression de l'ISF, et de tout impôt pour le 16ème arrondissement de Paris"
 
 			}
 		},
@@ -18,9 +18,9 @@
 			"Yeux" : "content/Hamon/yeux.png",
 			"Bouche" : "content/Hamon/bouche.png",
 			"Reformes" : {
-				"0" : "LÃ©galiser le cannabis, le LSD, la cocaÃ¯ne",
+				"0" : "Légaliser le cannabis, le LSD, la cocaïne",
 				"1" : "Revenu universel pour tous les animaux, domestiques et sauvages",
-				"2" : "Droit Ã  la PMA, GPA, RFID, PSG, UHD, NFC"
+				"2" : "Droit à  la PMA, GPA, RFID, PSG, UHD, NFC"
 			}
 		},
 		"LePen" : {
@@ -29,9 +29,9 @@
 			"Yeux" : "content/LePen/yeux.png",
 			"Bouche" : "content/LePen/bouche.png",
 			"Reformes" : {
-				"0" : "Sortir de l'Europe, de l'Eurasie, du systÃ¨me solaire",
-				"1" : "La prÃ©fÃ©rence nationale pour les vacances scolaires",
-				"2" : "Pas d'adoption, de titre de sÃ©jour et interdiction de lever les yeux pour les homosexuels"
+				"0" : "Sortir de l'Europe, de l'Eurasie, du système solaire",
+				"1" : "La préférence nationale pour les vacances scolaires",
+				"2" : "Pas d'adoption, de titre de séjour et interdiction de lever les yeux pour les homosexuels"
 			}
 		},
 		"Macron" : {
@@ -40,21 +40,20 @@
 			"Yeux" : "content/Macron/yeux.png",
 			"Bouche" : "content/Macron/bouche.png",
 			"Reformes" : {
-				"0" : "Remplacement des vols intÃ©rieurs par des bus macron",
-				"1" : "Laisser aux entreprises le choix de vie ou de mort sur leurs employÃ©s",
-				"2" : "Le ministÃ¨re des Finances est sous-traitÃ© Ã  la SociÃ©tÃ© GÃ©nÃ©rale"
+				"0" : "Remplacement des vols intérieurs par des bus macron",
+				"1" : "Laisser aux entreprises le choix de vie ou de mort sur leurs employés",
+				"2" : "Le ministère des Finances est sous-traité à la Société Générale"
 			}
 		},
 		"Melenchon" : {
-			"Nom" : " Jean Luc MÃ©lenchon",
+			"Nom" : " Jean Luc Mélenchon",
 			"Cheveux" : "content/Melenchon/cheveux.png",
 			"Yeux" : "content/Melenchon/yeux.png",
 			"Bouche" : "content/Melenchon/bouche.png",
 			"Reformes" : {
-				"0" : "Smic Ã  3 126 euros nets en 2017",
+				"0" : "Smic à  3 126 euros nets en 2017",
 				"1" : "La semaine de 4 heures",
-				"2" : "la retraite Ã  45 ans, 37 pour les fonctionnaires, 28 pour les syndiquÃ©s"
-
+				"2" : "la retraite à 45 ans, 37 pour les fonctionnaires, 28 pour les syndiqués"
 			}
 		}
 	}
