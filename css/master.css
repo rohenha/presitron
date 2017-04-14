@@ -741,7 +741,7 @@ header {
         width: 100%;
         height: inherit;
         padding: 0;
-        margin-bottom: 40px; } }
+        margin-bottom: 20px; } }
   #leaderboard #colonne_droite {
     width: 50%;
     height: 100%;
@@ -754,6 +754,9 @@ header {
         height: inherit; } }
   #leaderboard .title {
     margin-top: 50px; }
+    @media only screen and (max-width: 768px) {
+      #leaderboard .title {
+        margin-top: 20px; } }
   #leaderboard #classement {
     margin-top: 30px;
     color: #FFF;
@@ -761,6 +764,9 @@ header {
     width: 100%;
     overflow: hidden;
     position: relative; }
+    @media only screen and (max-width: 768px) {
+      #leaderboard #classement {
+        margin-top: 20px; } }
     #leaderboard #classement::before {
       content: "";
       display: block;
@@ -790,7 +796,7 @@ header {
       overflow-y: scroll; }
       @media only screen and (max-width: 768px) {
         #leaderboard #classement .container {
-          height: 400px; } }
+          height: 300px; } }
       #leaderboard #classement .container li {
         list-style: none;
         display: -webkit-box;
