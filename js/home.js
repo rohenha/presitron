@@ -31,7 +31,7 @@ window.fbAsyncInit = function() {
 				description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+", - "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+", - "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
 				picture : "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+userConfig.Cheveux+"-"+userConfig.Yeux+"-"+userConfig.Bouche+".jpg",
 			},function(response){
-	        	// self.location.href = 'leaderboard.php';
+	        	self.location.href = 'leaderboard.php';
 	    });
 	  	});
 };
