@@ -790,7 +790,7 @@ header {
       overflow-y: scroll; }
       @media only screen and (max-width: 768px) {
         #leaderboard #classement .container {
-          height: 800px; } }
+          height: 400px; } }
       #leaderboard #classement .container li {
         list-style: none;
         display: -webkit-box;

@@ -33,7 +33,7 @@
 		.container{
 			transform: skewY(8deg); padding:60px 20px;
 			height: 600px; overflow-y: scroll;
-			@media only screen and (max-width : 768px) { height: 800px;}
+			@media only screen and (max-width : 768px) { height: 400px;}
 			li{
 				list-style: none;
 				display: flex; flex-direction: row; align-items: center; justify-content: space-between;

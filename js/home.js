@@ -22,11 +22,11 @@ window.fbAsyncInit = function() {
 	  event.preventDefault();
 
 	  FB.ui({
-		  app_id : "428061007540028",
+		  	app_id : "428061007540028",
 			method: 'share',
-			// redirect_uri : "https://apps.facebook.com/presitron/leaderboard.php",
+			redirect_uri : "https://presitron.keleyonmars.com/leaderboard.php",
 			mobile_iframe: true,
-			href : "https://apps.facebook.com/presitron/",
+			href : "https://presitron.keleyonmars.com",
 			title : "Je vote "+$('#presName p span').html()+" pour ce programme :",
 			description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+", - "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+", - "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
 			picture : "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+userConfig.Cheveux+"-"+userConfig.Yeux+"-"+userConfig.Bouche+".jpg",
@@ -365,12 +365,12 @@ $(function() {
 			success:function(data){
 				console.log("success");
 				console.log(data);
-				setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
+				// setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
 			},
 			error:function(data){
 				console.log("error");
 				console.log(data);
-				setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
+				// setTimeout(function(){ document.location.href="leaderboard.php"; },5000);
 			}
 		});
 	});
