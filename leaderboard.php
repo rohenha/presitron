@@ -35,7 +35,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/master.min.css">
-	<title>Leaderboard | Présitron</title>
+	<title>LeaderBoard Présitron 2017 | Créez votre propre candidat</title>
+	<meta property="og:url"                content="https://apps.facebook.com/presitron/" />
+	<meta property="og:type"               content="game" />
+	<meta property="og:title"              content="LeaderBoard Présitron 2017 | Créez votre propre candidat" />
+	<meta property="og:description"        content="Parce que la campagne est folle, parce que la campagne est illisible, parce qu'elle est pleine de suspense... Construisez vous-même votre candidat et prenez le contrôle des élections" />
+	<meta property="og:image"              content="https://presitron.keleyonmars.com/content/FB_image.jpg" />
+	<meta property="fb:app_id" content="428061007540028"/>
 </head>
 <body id="leaderboard">
 

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/master.min.css">
-	<title>Présitron</title>
+	<title>Présitron 2017 | Créez votre propre candidat</title>
 	<meta property="og:url"                content="https://apps.facebook.com/presitron/" />
 	<meta property="og:type"               content="game" />
 	<meta property="og:title"              content="Présitron 2017 | Créez votre propre candidat" />
