@@ -4,12 +4,14 @@
 		width: 50%; height: 100%;
 		padding:0 30px 0 0;
 		transform: skewY(-8deg);
+		@media only screen and (max-width : 768px) { width: 100%; height: inherit; padding: 0; margin-bottom: 40px;}
 	}
 
 	#colonne_droite {
 		width: 50%; height: 100%;
 		// padding: 0  0 0 30px;
 		transform: skewY(-8deg);
+		@media only screen and (max-width : 768px) { width: 100%; height: inherit;}
 	}
 
 	.title{margin-top: 50px;}
@@ -23,13 +25,15 @@
 			width: 100%;  height: 50%;
 			position: absolute; bottom: 0; left: 0; z-index: 2;
 			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+			@media only screen and (max-width : 768px) { display: none;}
 		}
 		.container{
 			transform: skewY(8deg); padding:60px 20px;
 			height: 600px; overflow-y: scroll;
+			@media only screen and (max-width : 768px) { height: 800px;}
 			li{
 				list-style: none;
 				display: flex; flex-direction: row; align-items: center; justify-content: space-between;
@@ -63,6 +67,7 @@
 	#podium{
 		margin: 100px 0 50px 0;
 		display: flex; flex-direction: row; align-items: flex-end; align-items: flex-end;
+		@media only screen and (max-width : 768px) {display: none;}
 		>div{
 
 			.personne{

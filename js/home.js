@@ -564,15 +564,12 @@ function init(candidatsArray, userConfig){
 			default:
 		}
 	}
-	// console.log(candidatsArray);
-	// console.log("nbrs : "+nbr1+"/"+nbr2+"/"+nbr3 );
 	$('#cheveuxCand').attr({'data-candId': nbr1});
 	$('#yeuxCand').attr({'data-candId': nbr2});
 	$('#boucheCand').attr({'data-candId': nbr3});
 	nbr1 = Object.keys(candidatsArray)[nbr1];
 	nbr2 = Object.keys(candidatsArray)[nbr2];
 	nbr3 = Object.keys(candidatsArray)[nbr3];
-	// console.log("nbrs : "+nbr1+"/"+nbr2+"/"+nbr3 );
 	userConfig.Cheveux = nbr1;
 	userConfig.Yeux = nbr2;
 	userConfig.Bouche = nbr3;
@@ -582,12 +579,15 @@ function init(candidatsArray, userConfig){
 	$('#cheveuxCand').attr({'data-candidat': nbr1});
 	$('#yeuxCand').attr({'data-candidat': nbr2});
 	$('#boucheCand').attr({'data-candidat': nbr3});
-	animateText($('#reforme1'), candidatsArray[nbr1].Reformes[0], 30);
-	setTimeout(function(){animateText($('#reforme2'), candidatsArray[nbr2].Reformes[0], 30);},100);
-	setTimeout(function(){animateText($('#reforme3'), candidatsArray[nbr3].Reformes[0], 30);},200);
-	$('#reforme1').attr({'data-refId' : 0, 'data-candidat' : nbr1});
-	$('#reforme2').attr({'data-refId' : 0, 'data-candidat' : nbr2});
-	$('#reforme3').attr({'data-refId' : 0, 'data-candidat' : nbr3});
+	var refId1 = Math.round(Math.random()*(Object.keys(candidatsArray[nbr1].Reformes).length-1)),
+	refId2 = Math.round(Math.random()*(Object.keys(candidatsArray[nbr2].Reformes).length-1)),
+	refId3 = Math.round(Math.random()*(Object.keys(candidatsArray[nbr3].Reformes).length-1));
+	animateText($('#reforme1'), candidatsArray[nbr1].Reformes[refId1], 30);
+	setTimeout(function(){animateText($('#reforme2'), candidatsArray[nbr2].Reformes[refId2], 30);},100);
+	setTimeout(function(){animateText($('#reforme3'), candidatsArray[nbr3].Reformes[refId3], 30);},200);
+	$('#reforme1').attr({'data-refId' : refId1, 'data-candidat' : nbr1});
+	$('#reforme2').attr({'data-refId' : refId2, 'data-candidat' : nbr2});
+	$('#reforme3').attr({'data-refId' : refId3, 'data-candidat' : nbr3});
 	changeCandidatName(userConfig.Cheveux, userConfig.Yeux, userConfig.Bouche);
 	animateImg($('#cheveuxCand img'), candidatsArray[nbr1].Cheveux, 30);
 	setTimeout(function(){animateImg($('#yeuxCand img'), candidatsArray[nbr2].Yeux, 30);},100);

@@ -41,6 +41,17 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    body {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Arial", sans-serif;
@@ -121,6 +132,9 @@ header {
   top: 20px;
   right: 20px;
   z-index: 3; }
+  @media only screen and (max-width: 768px) {
+    header {
+      display: none; } }
 
 .title {
   display: block;
@@ -153,6 +167,11 @@ header {
   background-color: #FFF;
   display: inline-block;
   margin: 0 40px; }
+  @media only screen and (max-width: 768px) {
+    .drapeau {
+      width: 30px;
+      height: 50px;
+      margin: 0 25px; } }
   .drapeau::before {
     content: "";
     display: block;
@@ -179,6 +198,17 @@ header {
   -webkit-transform: skewY(-8deg);
       -ms-transform: skewY(-8deg);
           transform: skewY(-8deg); }
+  @media only screen and (max-width: 768px) {
+    #home #colonne_gauche {
+      width: 100%;
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+      height: initial;
+      padding-right: 0; }
+      #home #colonne_gauche h2.title {
+        display: none; } }
 
 #home #colonne_droite {
   width: 65%;
@@ -202,6 +232,17 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 0; }
+  @media only screen and (max-width: 768px) {
+    #home #colonne_droite {
+      display: block;
+      width: 100%;
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      height: initial;
+      padding-left: 0;
+      margin-bottom: 50px; } }
 
 #home .gabarit_candidats {
   display: inline-block;
@@ -234,18 +275,34 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      #home .gabarit_candidats #presName {
+        top: inherit;
+        bottom: -40px;
+        width: 100%; } }
     #home .gabarit_candidats #presName p {
       background-color: #FFF;
       padding: 10px 20px;
       -webkit-transform: skewY(-8deg);
           -ms-transform: skewY(-8deg);
               transform: skewY(-8deg); }
+      @media only screen and (max-width: 768px) {
+        #home .gabarit_candidats #presName p {
+          width: 100%;
+          text-align: center;
+          padding: 25px 0; } }
       #home .gabarit_candidats #presName p span {
         font-family: "Roboto Condensed", sans-serif;
         color: #292929;
         font-size: 40px;
         display: inline-block;
         text-transform: uppercase; }
+        @media only screen and (max-width: 768px) {
+          #home .gabarit_candidats #presName p span {
+            font-size: 40px; } }
+        @media only screen and (max-width: 500px) {
+          #home .gabarit_candidats #presName p span {
+            font-size: 30px; } }
 
 #home #generateur_global {
   width: 100%;
@@ -266,11 +323,18 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    #home #generateur_global {
+      display: block;
+      margin-top: -100px; } }
 
 #home .head {
   position: relative;
   top: 100px;
   left: 10px; }
+  @media only screen and (max-width: 600px) {
+    #home .head {
+      top: 70px; } }
   #home .head .generateur {
     display: -webkit-box;
     display: -webkit-flex;
@@ -291,6 +355,29 @@ header {
     font-size: 0;
     position: relative;
     z-index: 1; }
+    @media only screen and (max-width: 768px) {
+      #home .head .generateur img {
+        width: 100% !important;
+        height: inherit !important; } }
+    @media only screen and (max-width: 600px) {
+      #home .head .generateur .imgCand {
+        width: 60%; } }
+    @media only screen and (max-width: 768px) {
+      #home .head .generateur .arrowBodyPrev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        width: 50px; } }
+    @media only screen and (max-width: 768px) {
+      #home .head .generateur .arrowBodyNext {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        width: 50px; } }
     #home .head .generateur.cheveux img {
       width: 387px;
       height: 167px; }
@@ -435,6 +522,9 @@ header {
     color: #b0b0b0;
     font-size: 1em;
     padding: 10px 0; }
+    @media only screen and (max-width: 768px) {
+      #home .bloc_description ul {
+        font-size: 1.3em; } }
     #home .bloc_description ul li {
       margin: 0 0 25px 0;
       padding: 0 40px 0 0;
@@ -513,7 +603,7 @@ header {
         width: -webkit-calc(100% - 40px);
         width: calc(100% - 40px); }
 
-#home #bloc_chance {
+#home #bloc_chance_container {
   margin-top: 20px;
   width: 100%;
   display: -webkit-box;
@@ -532,17 +622,69 @@ header {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer; }
-  #home #bloc_chance svg {
-    width: 100px;
-    margin-right: 20px; }
-    #home #bloc_chance svg .shadow {
-      -webkit-filter: drop-shadow(3px 3px 0px rgba(41, 41, 41, 0.4));
-              filter: drop-shadow(3px 3px 0px rgba(41, 41, 41, 0.4)); }
-  #home #bloc_chance p {
-    font-size: 35px;
-    color: #FFF; }
+          justify-content: center; }
+  #home #bloc_chance_container h2.title {
+    display: none;
+    -webkit-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+            transform: skewY(-8deg); }
+    @media only screen and (max-width: 768px) {
+      #home #bloc_chance_container h2.title {
+        display: inline-block;
+        font-size: 25px;
+        padding-bottom: 30px; } }
+  @media only screen and (max-width: 600px) {
+    #home #bloc_chance_container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media only screen and (max-width: 768px) {
+    #home #bloc_chance_container {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  #home #bloc_chance_container #bloc_chance {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer; }
+    @media only screen and (max-width: 600px) {
+      #home #bloc_chance_container #bloc_chance {
+        margin-top: 30px; } }
+    @media only screen and (max-width: 768px) {
+      #home #bloc_chance_container #bloc_chance {
+        position: relative;
+        top: -25px; } }
+    #home #bloc_chance_container #bloc_chance svg {
+      width: 100px;
+      margin-right: 20px; }
+      #home #bloc_chance_container #bloc_chance svg .shadow {
+        -webkit-filter: drop-shadow(3px 3px 0px rgba(41, 41, 41, 0.4));
+                filter: drop-shadow(3px 3px 0px rgba(41, 41, 41, 0.4)); }
+    #home #bloc_chance_container #bloc_chance p {
+      font-size: 35px;
+      color: #FFF; }
 
 #home #splashscreen {
   display: -webkit-box;
@@ -578,6 +720,12 @@ header {
             transform: skewY(-8deg); }
     #home #splashscreen .splashscreen-container p {
       margin: 30px 0  0 0; }
+    @media only screen and (max-width: 768px) {
+      #home #splashscreen .splashscreen-container {
+        width: 100%;
+        padding: 20px; }
+        #home #splashscreen .splashscreen-container p {
+          font-size: 1.5em; } }
 
 #leaderboard {
   width: 98%; }
@@ -588,12 +736,22 @@ header {
     -webkit-transform: skewY(-8deg);
         -ms-transform: skewY(-8deg);
             transform: skewY(-8deg); }
+    @media only screen and (max-width: 768px) {
+      #leaderboard #colonne_gauche {
+        width: 100%;
+        height: inherit;
+        padding: 0;
+        margin-bottom: 40px; } }
   #leaderboard #colonne_droite {
     width: 50%;
     height: 100%;
     -webkit-transform: skewY(-8deg);
         -ms-transform: skewY(-8deg);
             transform: skewY(-8deg); }
+    @media only screen and (max-width: 768px) {
+      #leaderboard #colonne_droite {
+        width: 100%;
+        height: inherit; } }
   #leaderboard .title {
     margin-top: 50px; }
   #leaderboard #classement {
@@ -620,6 +778,9 @@ header {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 );
       /* IE6-9 */ }
+      @media only screen and (max-width: 768px) {
+        #leaderboard #classement::before {
+          display: none; } }
     #leaderboard #classement .container {
       -webkit-transform: skewY(8deg);
           -ms-transform: skewY(8deg);
@@ -627,6 +788,9 @@ header {
       padding: 60px 20px;
       height: 600px;
       overflow-y: scroll; }
+      @media only screen and (max-width: 768px) {
+        #leaderboard #classement .container {
+          height: 800px; } }
       #leaderboard #classement .container li {
         list-style: none;
         display: -webkit-box;
@@ -723,6 +887,9 @@ header {
         -ms-flex-align: end;
             align-items: flex-end;
     align-items: flex-end; }
+    @media only screen and (max-width: 768px) {
+      #leaderboard #podium {
+        display: none; } }
     #leaderboard #podium > div .personne {
       display: -webkit-box;
       display: -webkit-flex;

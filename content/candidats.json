@@ -6,7 +6,7 @@
 			"Yeux" : "content/Fillon/yeux.png",
 			"Bouche" : "content/Fillon/bouche.png",
 			"Reformes" : {
-				"0" : "Exécution de 500 000 fonctionnaires par mois",
+				"0" : "Suppression de 500 000 fonctionnaires par mois",
 				"1" : "Passage à  la semaine de 72 heures, à la journée de 32 heures",
 				"2" : "Suppression de l'ISF, et de tout impôt pour le 16ème arrondissement de Paris"
 
@@ -41,7 +41,7 @@
 			"Bouche" : "content/Macron/bouche.png",
 			"Reformes" : {
 				"0" : "Remplacement des vols intérieurs par des bus macron",
-				"1" : "Laisser aux entreprises le choix de vie ou de mort sur leurs employés",
+				"1" : "Le flexi-licenciement par SMS",
 				"2" : "Le ministère des Finances est sous-traité à la Société Générale"
 			}
 		},
