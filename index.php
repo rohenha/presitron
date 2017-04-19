@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/master.min.css">
 	<title>Présitron 2017 | Créez votre propre candidat</title>
-	<meta property="og:url"                content="https://apps.facebook.com/presitron/" />
+	<meta property="og:url"                content="https://presitron.keleyonmars.com/" />
 	<meta property="og:type"               content="game" />
 	<meta property="og:title"              content="#presitron 2017 | Créez votre propre candidat" />
 	<meta property="og:description"        content="Parce que la campagne est folle, parce que la campagne est illisible, parce qu'elle est pleine de suspense... Construisez vous-même votre candidat et prenez le contrôle des élections" />
