@@ -1,6 +1,7 @@
 // Récupération des candidats
 var candidatsArray ={};
 var imgsPreload = [];
+var messageUser = "#presitron 2017 | Créez votre propre candidat";
 // Configuration de l'utilisateur
 var userConfig = {
 	"Cheveux" : "Fillon",
@@ -26,6 +27,7 @@ window.fbAsyncInit = function() {
 				method: 'share',
 				redirect_uri : "leaderboard.php",
 				mobile_iframe: true,
+				message : messageUser,
 				href : "https://presitron.keleyonmars.com",
 				title : "#presitron 2017 | Je vote "+$('#presName p span').html()+" pour ce programme :",
 				description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+", - "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+", - "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
@@ -477,8 +479,9 @@ function changeCandidatName(cheveux, yeux, bouche){
 	tlText.set($('#presName p span'), {y:30, opacity:0, text:newName});
 	tlText.to($('#presName p span'), 0.3, {ease:Power3.easeInOut, y: 0, opacity:1});
 	tlText.play();
-	$('meta[property=og\\:title]').attr('content', "Je vote "+newName+" pour ce programme :");
+	$('meta[property=og\\:title]').attr('content', "#presitron 2017 | Je vote "+newName+" pour ce programme :");
 	$('meta[property=og\\:image]').attr('content', "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+cheveux+"-"+yeux+"-"+bouche+".jpg");
+	messageUser = "#presitron 2017 | Je vote "+newName+" pour ce programme ";
 
 
 }
