@@ -27,7 +27,7 @@ window.fbAsyncInit = function() {
 				redirect_uri : "leaderboard.php",
 				mobile_iframe: true,
 				href : "https://presitron.keleyonmars.com",
-				title : "Je vote "+$('#presName p span').html()+" pour ce programme :",
+				title : "#presitron 2017 | Je vote "+$('#presName p span').html()+" pour ce programme :",
 				description : "- "+candidatsArray[userConfig.Cheveux].Reformes[userConfig.ref1]+", - "+candidatsArray[userConfig.Yeux].Reformes[userConfig.ref2]+", - "+candidatsArray[userConfig.Bouche].Reformes[userConfig.ref3]+"",
 				picture : "https://presitron.keleyonmars.com/content/combinaisons/Facebook/"+userConfig.Cheveux+"-"+userConfig.Yeux+"-"+userConfig.Bouche+".jpg",
 			},function(response){
